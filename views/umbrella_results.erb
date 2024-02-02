@@ -1,10 +1,23 @@
-<%= @raw_response %>
-
 <h1>Should I take an umbrella?</h1>
 
 <dl>
   <dt>User's location</dt>
   <dd><%= @user_location %></dd>
+
+  <dt>Latitude</dt>
+  <dd><%= @lat %></dd>
+
+  <dt>Longitude</dt>
+  <dd><%= @lng %></dd>
+
+  <dt>Current temperature</dt>
+  <dd><%= @current_temp %></dd>
+
+  <dt>Current summary</dt>
+  <dd><%= @next_hour_summary %></dd>
+
+  <dt>Umbrella?</dt>
+  <dd><%= @umbrella_message %></dd>
 </dl>
 
 <a href="/umbrella">Go back</a>
